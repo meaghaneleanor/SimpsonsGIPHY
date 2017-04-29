@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simpsons Quiz</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+ @font-face { 
+ 	font-family: Simpsons; 
+ 	src: url('simpsonfont/akbar.ttf'); 
+ } 
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: yellow;
+}
+.header {
+	background-color: #64b4e1;
+	padding: 30px;
+}
+
+.header img {
+	margin: 0 auto;
+	display: block;
+	padding: 20px 0 0 0;
+	max-width: 100%;
+}
+
+.header h1 {
+	text-align: center;
+	font-family: Simpsons;
+	color: red;
+	margin-top: -15px;
+	margin-left: 96px;
+	font-size: 72px;
+	text-shadow: -8px -1px black;
+}
+#container {
+	background-color: yellow;
+}
+
+#container h3, #container h2 {
+	width: 75%;
+	margin: 30px auto;
+	font-size: 24px;
+	color: #004996;
+	font-family: Simpsons;
+	word-spacing: 10px;
+	line-height: 1.8;
+}
+
+#container h2 {
+	font-size: 38px;
+	color: red;
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 5px;
+}
+
+#container h4 {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	font-family: Simpsons;
+	font-size: 22px;
+	line-height: 1.8;
+	word-spacing: 10px;
+	margin-top: 10px;
+
+}
+#container .gif {
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px 0 60px 0;
+}
+
+#container .gif video {
+	width: 55%;
+	border: 4px solid black;
+	box-shadow: -10px -10px black;
+}
+input[type=radio] {
+	display: none;
+}
+
+
+#container input label p, p {
+	padding: 20px;
+    width: 100%;
+    font-size: 18px;
+    width: 45%;
+    margin: 13px auto;
+    border: 3px solid #64b4e1;
+    border-radius: 5px;
+}
+
+label p:hover{
+	cursor:pointer;
+	background-color: #64b4e1;
+}
+
+:checked+label p{
+	background:#64b4e1;
+	color:#fff
+}
+
+
+button.submit, button.restart {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	font-family: Simpsons;
+	font-size: 36px;
+	border-radius: 5px;
+	padding: 25px;
+	box-shadow: -5px -5px black;
+	background-color: #64b4e1;
+	margin: 0 auto;
+	display:block;
+	margin-bottom: 30px;
+	outline: none;
+}
+
+button.restart {
+	display: none;
+	margin-top: 40px;
+}
+
+.active {
+	background-color: #64b4e1;
+}
+
+#container iframe {
+	margin: 0 auto;
+	display: block;
+	margin-top: 30px;
+}
+
+@media (max-width: 992px) {
+	#container .gif video {
+		width: 85%;
+	}
+}
+
+@media (max-width: 767px) {
+	#container h3, #container h2 {
+		width: 85%;
+		font-size: 20px;
+	}
+
+	#container input label p, p {
+		width: 70%;
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 600px) {
+	.header h1 {
+		font-size: 55px;
+	}
+	#container .gif video {
+		width: 90%;
+	}
+	#container h3, #container h2 {
+		width: 92%;
+	}
+	#container input label p, p {
+		width: 73%;
+	}
+}
+
+@media (max-width: 580px) {
+	#container iframe {
+		width: 95% !important;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 450px) {
+	#container h3, #container h2 {
+		font-size: 18px;
+	}
+	#container input label p, p {
+		font-size: 14px;
+	}
+	.header h1 {
+		font-size: 40px;
+		text-shadow: -5px -1px black;
+	}
+	#container .gif video {
+		width: 85%;
+	}
+	#container .gif {
+		padding-bottom: 25px;
+	}
+}
+
+@media (max-width: 390px) {
+	.header h1 {
+		margin-top: -10px;
+		font-size: 36px;
+	}
+}
+
+@media (max-width: 340px) {
+	.header h1 {
+		font-size: 32px;
+		margin-left: 82px;
+		text-shadow: -4px -1px black;
+	}
+}
+</style>
+<body>
+	<div class="header">
+		<img src="simpsons-logo.png" alt="">
+		<h1>Quiz</h1>
+	</div>
+	<div id="container">
+
+	</div>
+
+	<button class="submit">Submit</button>
+	<button class="restart">Try Again</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="main2.js"></script>
+</body>
+</html>
